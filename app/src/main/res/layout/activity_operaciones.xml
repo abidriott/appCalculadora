@@ -45,14 +45,6 @@
             android:textSize="16sp"
             android:textStyle="italic">
         </TextView>
-        <EditText
-            android:id="@+id/txtNum1"
-            android:inputType="numberDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:drawable/edit_text"
-            android:padding="8dp">
-        </EditText>
 
 
         <TextView
@@ -64,14 +56,7 @@
             android:textSize="16sp"
             android:textStyle="italic">
         </TextView>
-        <EditText
-            android:id="@+id/txtNum2"
-            android:inputType="numberDecimal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:drawable/edit_text"
-            android:padding="8dp">
-        </EditText>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

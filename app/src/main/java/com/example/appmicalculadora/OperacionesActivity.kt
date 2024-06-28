@@ -45,8 +45,7 @@ class OperacionesActivity : AppCompatActivity() {
     public fun iniciarComponentes(){
         txtUsuario= findViewById(R.id.txtUsuario)
         txtResultado= findViewById(R.id.txtResultado)
-        txtNum1=findViewById(R.id.txtNum1)
-        txtNum2= findViewById(R.id.txtNum2)
+
         btnSumar=findViewById(R.id.btnMas)
         btnMult=findViewById(R.id.btnMul)
         btnRestar=findViewById(R.id.btnRes)

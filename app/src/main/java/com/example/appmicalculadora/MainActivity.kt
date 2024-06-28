@@ -45,18 +45,19 @@ class MainActivity : AppCompatActivity() {
         btnIngresar=findViewById(R.id.btnIngresar)
     }
     public fun eventosClic(){
-        btnIngresar.setOnClickListener(View.OnClickListener {
-            val usuario: String=getString(R.string.usuario)
-            val pas: String =getString(R.string.pass)
-            val nombre: String=getString(R.string.nombre)
-            if(txtUsuario.text.toString().contentEquals(usuario) && txtContraseña.text.toString().contentEquals(pas) ){
-                val intent = Intent(this, OperacionesActivity::class.java)
-                intent.putExtra("Usuario",usuario)
-                startActivity(intent)
 
-            }else
+        btnIngresar.setOnClickListener {
+            val usuario: String = getString(R.string.usuario)
+            val pass: String = getString(R.string.pass)
+            val nombre: String = getString(R.string.nombre)
+            if (txtUsuario.text.toString() == usuario && txtContraseña.text.toString() == pass) {
+                val intent = Intent(this, OperacionesActivity::class.java)
+                intent.putExtra("Usuario", usuario)
+                startActivity(intent)
+            } else {
                 Toast.makeText(this, "El usuario o password no es correcto", Toast.LENGTH_SHORT).show()
-        })
+            }
+        }
         btnSalir.setOnClickListener(View.OnClickListener {
             finish();
         })
