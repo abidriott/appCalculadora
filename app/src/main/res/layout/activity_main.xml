@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-
     <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
         <TextView
             android:id="@+id/lblNombre"
             android:layout_width="wrap_content"
@@ -23,43 +23,47 @@
             android:layout_gravity="center_horizontal"
             />
 
-
+        <TextView
+            android:id="@+id/lblsesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LOGIN"
+            android:textSize="18sp" />
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/txtuser"
+            android:layout_width="339dp"
             android:layout_height="48dp"
-            android:id="@+id/txtUsuario"
-            android:layout_marginTop="65sp"
-            android:hint="Usuario"
-            android:padding="10sp">
-        </EditText>
+            android:layout_marginTop="20dp"
+            android:hint="Usuario" />
+
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/txtpass"
+            android:layout_width="342dp"
             android:layout_height="48dp"
-            android:layout_marginTop="25sp"
-            android:id="@+id/txtContraseña"
+            android:layout_marginTop="20dp"
             android:hint="Contraseña"
-            android:padding="10sp">
-        </EditText>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:text="Ingresar"
-            android:padding="10sp"
-            android:layout_marginTop="370sp"
-            android:id="@+id/btnIngresar">
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:text="Salir"
-            android:padding="10sp"
-            android:layout_marginTop="10sp"
+            android:inputType="textPassword" />
 
-            android:id="@+id/btnSalir">
-        </Button>
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="370sp"
+            android:padding="10sp"
+            android:text="Entrar" />
+
+        <Button
+            android:id="@+id/btnCerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            />
 
     </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

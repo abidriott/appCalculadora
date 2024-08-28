@@ -1,22 +1,22 @@
 package com.example.appmicalculadora
 
-class Operaciones(var num1:Float, var num2: Float) {
+import kotlin.time.measureTime
 
-    //bonjour
+class Operaciones (var num1:Float, var num2: Float) {
 
-    public fun suma(): Float{
-        return this.num1+this.num2
-
+    public fun sumar() : Float{
+        return this.num1 + this.num2
     }
-    public fun resta(): Float{
+
+    public fun restar() : Float{
         return this.num1 - this.num2
     }
 
-    public fun multiplica(): Float{
-        return num1*num2;
-
+    public fun multiplicar() : Float{
+        return this.num1 * this.num2
     }
-    public fun div(): Float{
-        return this.num1/this.num2
+
+    public  fun dividir() : Float{
+        return this.num1 / this.num2
     }
 }
